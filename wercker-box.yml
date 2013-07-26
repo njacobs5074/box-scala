@@ -6,9 +6,13 @@ env:
   SBT_OPTS: -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M
   IVY_CACHE_DIR: '"$WERCKER_CACHE_DIR/ivy"'
 script: |-
+  sudo add-apt-repository ppa:webupd8team/java -y
   sudo apt-get update
-  sudo apt-get install wget openjdk-7-jdk -qq
-  sudo apt-get install openjdk-7-jre -qq
+  echo debconf shared/accepted-oracle-license-v1-1 select true | \
+  sudo debconf-set-selections
+  echo debconf shared/accepted-oracle-license-v1-1 seen true | \
+  sudo debconf-set-selections
+  sudo apt-get install oracle-java7-installer -qq
 
   sudo wget http://www.scala-lang.org/downloads/distrib/files/scala-2.10.2.tgz
   tar zxvf scala-2.10.2.tgz
