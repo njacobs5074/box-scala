@@ -8,6 +8,7 @@ env:
 script: |-
   sudo apt-get update
   sudo apt-get install wget openjdk-7-jdk -qq
+  sudo apt-get install openjdk-7-jre -qq
 
   sudo wget http://www.scala-lang.org/downloads/distrib/files/scala-2.10.2.tgz
   tar zxvf scala-2.10.2.tgz
