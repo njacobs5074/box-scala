@@ -1,5 +1,5 @@
 name: scala
-version: 0.1.3
+version: 0.1.4
 type: main
 os: ubuntu@12.04
 env:
@@ -7,7 +7,7 @@ env:
   IVY_CACHE_DIR: '"$WERCKER_CACHE_DIR/ivy"'
 script: |-
   sudo apt-get update
-  sudo apt-get install python-software-properties
+  sudo apt-get install python-software-properties curl wget -y
   sudo add-apt-repository ppa:webupd8team/java -y
   sudo apt-get update
   echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
