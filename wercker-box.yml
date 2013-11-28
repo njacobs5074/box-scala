@@ -14,7 +14,7 @@ script: |-
   echo debconf shared/accepted-oracle-license-v1-1 seen true |  sudo debconf-set-selections
   sudo apt-get install oracle-java7-installer -qq
 
-  sudo wget http://www.scala-lang.org/downloads/distrib/files/scala-2.10.2.tgz
+  sudo wget http://www.scala-lang.org/files/archive/scala-2.10.2.tgz
   tar zxvf scala-2.10.2.tgz
   sudo mv scala-2.10.2 /usr/share/scala
 
