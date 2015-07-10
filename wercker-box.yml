@@ -29,6 +29,7 @@ script: |-
   
   #install scala
   sudo apt-get remove scala-library scala
+  sudo apt-get install libjansi-java
   wget http://www.scala-lang.org/files/archive/scala-2.10.5.deb
   sudo dpkg -i scala-2.10.5.deb
   sudo apt-get update
