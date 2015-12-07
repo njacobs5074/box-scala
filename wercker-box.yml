@@ -51,4 +51,4 @@ script: |-
 
   #install postgres
   sudo apt-get install postgresql postgresql-contrib
-  sudo -u postgres createuser --superuser ubuntu
+  sudo sudo -u postgres createuser --superuser ubuntu
