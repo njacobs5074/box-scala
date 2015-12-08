@@ -51,4 +51,4 @@ script: |-
 
   #install postgres
   sudo apt-get install postgresql postgresql-contrib
-  sudo sudo -u postgres bash -c "psql -c \"CREATE ROLE ubuntu PASSWORD 'ubuntu' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;\"
+  sudo sudo -u postgres bash -c "psql -c \"CREATE ROLE ubuntu PASSWORD 'ubuntu' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;\""
