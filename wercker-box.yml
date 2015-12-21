@@ -16,7 +16,7 @@ env:
 script: |-
   #install postgres
   sudo apt-get update
-  sudo apt-get install postgresql-9.4
+  sudo apt-get install postgresql-9.3
   
   
   #install Java 8
