@@ -15,7 +15,7 @@ env:
   IVY_CACHE_DIR: '"$WERCKER_CACHE_DIR/ivy"'
 script: |-
   #install software properties common
-  apt-get install software-properties-common
+  sudo apt-get install software-properties-common
   
   #install postgres
   sudo add-apt-repository "deb https://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
