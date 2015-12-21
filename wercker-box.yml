@@ -1,5 +1,5 @@
 name: scala
-version: 0.2.11
+version: 0.2.12
 type: main
 description: Java8 box provisioned with the Oracle distribution via the webupd8team ppa. Come with last last sbt (currently 0.13.8)
 os: ubuntu@14.04
@@ -50,5 +50,5 @@ script: |-
   sudo ln -sf /usr/bin/ruby1.9.3 ruby
 
   #install postgres
-  sudo apt-get install postgresql postgresql-contrib
+  sudo apt-get install postgresql-9.3 postgresql-contrib
   sudo sudo -u postgres bash -c "psql -c \"CREATE ROLE ubuntu PASSWORD 'ubuntu' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;\""
