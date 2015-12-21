@@ -2,7 +2,7 @@ name: scala
 version: 0.2.12
 type: main
 description: Java8 box provisioned with the Oracle distribution via the webupd8team ppa. Come with last last sbt (currently 0.13.8)
-os: ubuntu@14.04
+os: ubuntu@14.10
 keywords:
   - java
   - sbt
