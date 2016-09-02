@@ -1,5 +1,5 @@
 name: scala
-version: 0.2.8
+version: 0.3.1
 type: main
 description: Java8 box provisioned with the Oracle distribution via the webupd8team ppa. Come with last last sbt (currently 0.13.8)
 os: ubuntu@14.04
