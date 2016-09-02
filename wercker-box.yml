@@ -1,5 +1,5 @@
 name: scala
-version: 0.2.13
+version: 0.2.14
 type: main
 description: Java8 box provisioned with the Oracle distribution via the webupd8team ppa. Come with last last sbt (currently 0.13.8)
 os: ubuntu@15.10
@@ -40,8 +40,8 @@ script: |-
   #install scala
   sudo apt-get remove scala-library scala
   sudo apt-get install libjansi-java
-  wget http://www.scala-lang.org/files/archive/scala-2.10.5.deb
-  sudo dpkg -i scala-2.10.5.deb
+  wget http://www.scala-lang.org/files/archive/scala-2.11.8.deb
+  sudo dpkg -i scala-2.11.8.deb
   sudo apt-get update
   sudo apt-get install scala
   
