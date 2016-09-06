@@ -1,5 +1,5 @@
 name: scala
-version: 0.3.4
+version: 0.3.5
 type: main
 description: Java8 box provisioned with the Oracle distribution via the webupd8team ppa. Come with last last sbt (currently 0.13.9)
 os: ubuntu@15.10
@@ -46,8 +46,8 @@ script: |-
   sudo apt-get install scala
 
   #install sbt
-  wget http://dl.bintray.com/sbt/debian/sbt-0.13.11.deb
-  sudo dpkg -i sbt-0.13.11.deb
+  wget http://dl.bintray.com/sbt/debian/sbt-0.13.9.deb
+  sudo dpkg -i sbt-0.13.9.deb
   sudo apt-get update
   sudo apt-get install sbt
 
