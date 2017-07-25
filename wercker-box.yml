@@ -10,7 +10,7 @@ keywords:
   - oracle
   - sun
 env:
-  SBT_OPTS: -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled
+  SBT_OPTS: -Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled
   JAVA_OPTS: '-Dsbt.ivy.home="$WERCKER_CACHE_DIR/ivy2"'
   IVY_CACHE_DIR: '"$WERCKER_CACHE_DIR/ivy"'
 script: |-
